@@ -1,0 +1,27 @@
+.subscribe-email__text {
+    height: 3.75em;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-bottom: 2px solid  rgba(255, 255, 255, 0.15);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.51);
+        font-size: 1.125rem;
+        letter-spacing: 0.15em;
+    }
+
+    &:hover {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-bottom: 2px solid $color-light;
+    transition: 0.3s;
+
+     &::placeholder {
+         color: $color-light;
+     }
+    }
+}

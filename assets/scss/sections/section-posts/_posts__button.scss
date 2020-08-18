@@ -1,0 +1,16 @@
+.posts__button {
+
+    @include sm-min {
+        @media (min-width: $sm) {
+            display: flex;
+            justify-content: center;
+
+        }
+      }
+
+    @include sm {
+        @media (max-width: $sm - 0.2) {
+            display: block;
+        }
+      }
+}

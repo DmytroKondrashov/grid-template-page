@@ -1,0 +1,47 @@
+.posts__grid {
+    display: grid;
+    padding-bottom: 20px;
+    grid-gap: 20px;
+
+    @include lg-min {
+        @media (min-width: $lg) {
+            grid-template-areas:
+            "p1 p1 p2 p3"
+            "p4 p5 p6 p6";
+            grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+    @include lg-md {
+        @media (max-width: $lg - 0.2) and (min-width: $md) {
+            grid-template-areas:
+            "p1 p1 p2"
+            "p3 p4 p4"
+            "p5 p5 p6";
+            grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+    @include md-sm {
+        @media (max-width: $md - 0.2) and (min-width: $sm) {
+            grid-template-areas:
+            "p1 p2"
+            "p3 p4"
+            "p5 p6";
+            grid-template-columns: 1fr 1fr;
+        }
+      }
+
+    @include sm {
+        @media (max-width: $sm - 0.2) {
+            grid-template-areas:
+            "p1"
+            "p2"
+            "p3"
+            "p4"
+            "p5"
+            "p6";
+        grid-template-columns: 1fr;
+        }
+      }
+}
