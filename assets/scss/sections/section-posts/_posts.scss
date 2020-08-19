@@ -1,4 +1,7 @@
 .posts {
+    .posts h2 {
+  margin-top: 0;
+}
 
     @include lg-min {
         @media (min-width: $lg) {
