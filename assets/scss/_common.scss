@@ -33,6 +33,7 @@ h2 {
   letter-spacing: 0.1em;
   color: $color-primary;
   line-height: 1.2em;
+  margin-top: 0;
 
   @include lg-min {
     @media (min-width: $lg) {

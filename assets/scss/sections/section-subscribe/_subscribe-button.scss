@@ -1,21 +1,23 @@
 .subscribe-button {
     display: block;
     height: 60px;
+    padding: 18px 20px;
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 2px solid  rgba(255, 255, 255, 0.15);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    color: $color-light;
+    transition: background-color 0.5s, border-color 0.5s;
+    width: 100%;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     font-size: 1.125rem;
-    letter-spacing: 2.7px;
+    letter-spacing: 0.1em;
     padding-right: 30px;
     padding-left: 30px;
 
     &:hover {
         background-color: $color-accent;
         border: 2px solid $color-light;
-        transition: 0.3s;
     }
 }

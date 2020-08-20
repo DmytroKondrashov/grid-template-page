@@ -1,27 +1,32 @@
 .subscribe-email__text {
-    height: 3.75em;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-bottom: 2px solid  rgba(255, 255, 255, 0.15);
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    display: block;
+    width: 100%;
+    height: 60px;
     padding-right: 30px;
     padding-left: 30px;
+    transition: background-color 0.5s, border-color 0.5s;
+    letter-spacing: 0.15em;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.05);
+    font-size: 1.125rem;
 
     &::placeholder {
-        color: rgba(255, 255, 255, 0.51);
+        color: #637588;
         font-size: 1.125rem;
         letter-spacing: 0.15em;
     }
 
-    &:hover {
-    box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.15);
-    border-bottom: 2px solid $color-light;
-    transition: 0.3s;
+    &:hover,
+    &:focus {
+        border-color: rgba(255, 255, 255, 0.15);
+        border-bottom-color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.15);
+        outline: none;
 
      &::placeholder {
          color: $color-light;
      }
-    }
+    } 
 }

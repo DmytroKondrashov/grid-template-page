@@ -3,6 +3,40 @@
     align-content: center;
     padding: 20px;
     background-color: #EEEEEE;
-    text-align: center;
     color: $color-gray;
+    text-align: center;
 }
+
+.post-item__caption h3 {
+    transition: color 0.5s;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    // line-height: 1.15em;
+}
+
+
+
+
+// .post-item__caption {
+//     display: grid;
+//     -ms-flex-line-pack: center;
+//     align-content: center;
+  
+//     padding: 20px;
+//   }
+  
+//   .post-item__caption h3 {
+//     -webkit-transition: color 0.5s;
+//     -o-transition: color 0.5s;
+//     transition: color 0.5s;
+//     text-align: center;
+  
+//     font-family: "Roboto Slab", serif;
+//   }
+  
+//   .post-item__caption p {
+//     -webkit-transition: color 0.5s;
+//     -o-transition: color 0.5s;
+//     transition: color 0.5s;
+//     text-align: center;
+//   }
